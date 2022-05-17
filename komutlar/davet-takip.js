@@ -13,7 +13,7 @@ exports.run = async (client, message, args, config) => {
   let channel = message.mentions.channels.first()
   
     if (!channel) {
-        return message.reply("** Doğru Kullanım: ** !davet-takip #kanal")
+        return message.reply("** Doğru Kullanım: ** .Davet-takip #kanal")
     }
 
   

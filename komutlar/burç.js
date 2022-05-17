@@ -6,7 +6,7 @@ exports.run = async (bot, message, args) => {
 if (!args[0]) {
   message.channel.send
 let hata = new Discord.RichEmbed()
-.setTitle(":warning: Hata!")
+.setTitle(" Hata!")
 .setDescription(":x: Burç girmeyi unuttun!")
 .setTimestamp()
 }
@@ -55,7 +55,7 @@ if (args[0] === "balık") {
 message.channel.send(
 new Discord.RichEmbed()
   
-  .setTitle("**Örnek:** !burç ikizler")
+  .setTitle("**Örnek:** .Burç Balık")
   .setDescription("**Uğurlu sayın:** " + sayi)
   .setColor("RANDOM")
   .setTimestamp()

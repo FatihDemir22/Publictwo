@@ -8,8 +8,8 @@ exports.run = function(client, message, args) {
   
   
   var yazi = args.slice(0).join(' ');
-  if (yazi.length < 1) return message.reply("Lütfen **1 ile 8** arasında yazı yaznz")
-  if (yazi.length > 8) return message.reply("Lütfen **1 ile 8** arasında yazı yaznz")
+  if (yazi.length < 1) return message.reply("Lütfen **1 ile 8** arasında yazı yazınız.")
+  if (yazi.length > 8) return message.reply("Lütfen **1 ile 8** arasında yazı yazınız.")
   
    ascii(yazi, {
         font: 'Dancing Font',
