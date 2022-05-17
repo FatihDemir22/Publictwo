@@ -8,7 +8,7 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
 var oyun = [
         "Fatih ❤ S P E A W E R A",
-        "Komutum .yardım,
+        "Komutum .yardım",
         "Fatih ❤ S P E A W E R A",
     ];
 
@@ -16,7 +16,7 @@ var oyun = [
 
         var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
 
-        client.user.setActivity(oyun[random], "https://www.twitch.tv/selx" );
+        client.user.setActivity(oyun[random], "Fatih Demir" );
         }, 2 * 2500);
     
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Aktif, Komutlar yüklendi!`);
