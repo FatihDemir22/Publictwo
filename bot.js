@@ -111,7 +111,7 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.token);
 
 client.on("message", async message => {
     if (message.member.hasPermission('MANAGE_GUILD')) return;
@@ -912,7 +912,7 @@ client.on("guildMemberRemove", async member => {
     })
 })
 
-client.login(ayarlar.token);
+client.login(process.env.token);
 client.on("message", async message =>{
 const request = require('node-superfetch');     
 let gold = await db.fetch(`gold_${message.member.id}`)
