@@ -8,14 +8,14 @@ exports.run = (bot, message, args) =>
      if(collection.first() == null)
      {
        const embed = new Discord.RichEmbed()
-       .setTitle(`<a:qwe2:601527835890286612> Banlanan Kullanıcı bulunamadı <a:qwe2:601527835890286612>`)
+       .setTitle(` Banlanan Kullanıcı bulunamadı `)
        .setColor("RED");
        message.channel.send({embed});
      }
      else
      {
        const embed = new Discord.RichEmbed()
-       .setTitle("<a:qwe2:601527835890286612> Ban Listesi: Sunucudan Banlananlar.")
+       .setTitle(" Ban Listesi: Sunucudan Banlananlar.")
        .setColor("RED");
        for(userlist of collection)
        {
